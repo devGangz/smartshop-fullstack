@@ -1,0 +1,27 @@
+{
+  "name": "task-508.10-nodejs-mongodb-connect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/devcamp120.j2231/exercise/phongnn/03-03-2023/task-508.10-nodejs-mongodb-connect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/devcamp120.j2231/exercise/phongnn/03-03-2023/task-508.10-nodejs-mongodb-connect/issues"
+  },
+  "homepage": "https://gitlab.com/devcamp120.j2231/exercise/phongnn/03-03-2023/task-508.10-nodejs-mongodb-connect#readme",
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "mongoose": "^7.0.0"
+  }
+}

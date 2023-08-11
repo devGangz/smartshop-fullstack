@@ -1,0 +1,399 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#scroll-container {
+  overflow: hidden;
+}
+
+#scroll-text {
+  text-align: right;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 0s linear infinite;
+  -webkit-animation: my-animation 0s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.astext {
+    background:none;
+    border:none;
+    cursor: pointer;
+    text-align: start;
+}
+
+.fix-chi-tiet {
+  max-height: 30px;
+  max-width: 63px;
+  width: 63px;
+  height: 30px;
+}
+
+.headerFluidContainer {
+  height: 30px;
+  width: 100%;
+  background-color:#101010;
+}
+
+.headerSecond {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #282c34;
+}
+.fixedCSS{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+
+
+@media screen and (max-width: 480px) {
+  .fixedCSS{
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  }
+
+  .header7{
+    width: 40%;
+    margin-left: -300px;
+  }
+
+  .header9 {
+    width: 100%;
+  }
+  .carouselIphone{
+    width: 100%;
+  }
+  #footerLayout{
+  width: 100%;
+  }
+
+  #footerTotal{
+    height: 30vh;
+  }
+
+  .FooterFixed{
+  position: fixed;
+  }
+
+  #iconBottom{
+    margin-top: 20px;
+    margin-right: 150px;
+    width: 30%;
+  }
+  .containerViewAll{
+    margin-bottom:4600px;
+  }
+
+  .cardViewAll{
+  height: 370px;
+  }
+
+  #CarouselInfor{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  #inforDetail{
+    display: none;
+  }
+
+
+  #tangGiamComponent{
+    margin-top: -10px;
+  }
+
+  #AddtocartButton{
+    scale: 0.8;
+    margin-left: -10px;
+  }
+
+  /* Trang giỏ hàng điện thoại */
+  #tableAddToCart{
+    scale: 1;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .fontThead{
+    font-size: 7px;
+    top:50%;
+    bottom: 50%;
+  }
+  .fontTbody{
+    font-size: 8px;
+  }
+  #iconRemove{
+    scale: 0.6;
+    margin-top: 0px;
+  }
+  #slcolumn{
+    width: 60px
+  }
+  .fontsizeCart {
+    font-size: 10px;
+  }
+  .cartWeb{
+    display: none;
+  }
+
+  #marginTopViewAll{
+    margin-top: 90px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 480.1px) and (max-width: 820.1px) {
+    .inforshowPhone{
+    display: none;
+  }
+  .header2{ /*Logo*/
+  width: 20%;
+  border: 1px salmon;
+  margin-left: -270px;
+  }
+
+  .header4 {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  }
+
+  .carouselAirPad{
+    width: 100%;
+    
+  }
+  #iconBottom{
+    margin-top: 20px;
+    margin-right: 150px;
+    width: 30%;
+  }
+  .LogoutIcon{
+    width: 20%;
+    margin-right: 30px;
+  }
+  .cardViewAll{
+  height: 370px;
+  }
+  .containerViewAll{
+    margin-bottom:630px;
+  }
+
+  #CarouselInfor{
+    width: 50%;
+  }
+
+  #inforDetail{
+    width: 50%;
+    height: 50%;
+  }
+
+
+  /*Thong tin san pham*/
+  #productInforPage{
+    height: 198px;
+    margin-bottom: 10px;
+  }
+
+  #InforTieude{
+    font-size: 20px;
+  }
+  #Inforbrand{
+    font-family: "Montserrat";
+    font-size: 15px;
+    margin-top: -20px;
+  }
+
+  #InforFeature{
+    font-weight: 600;
+    font-family: "Montserrat";
+    font-size: 15px;
+    margin-top: -20px;
+  }
+
+  #InforDescription{
+    font-size: x-small;
+    font-family: "Montserrat";
+  }
+  #priceFirst{
+    font-size: 12px;
+  }
+  #priceSecond{
+    font-size: 12px;
+    margin-bottom: -30px;
+  }
+  #AddtocartButton{
+    scale: 0.5em;
+    font-size: 10px;
+  }
+  #borderQuantity{
+    margin-top: 10px;
+    height: 40px;
+
+  }
+  #AddtocartButton{
+    margin:0 auto;
+    margin-top: -10px;
+    padding-top: -20px;
+    margin-bottom: 10px;
+  }
+    .offMobile{
+    display: none;
+  }
+}
+
+#loginCSS {
+  /* fallback for old browsers */
+  background-color: #282c34;
+  height: 100vh;
+}
+
+
+@media screen and (min-width: 820.2px) {
+  .inforshowPhone{
+    display: none;
+  }
+  .containerViewAll{
+    margin-bottom:1170px;
+  }
+  .offMobile{
+    display: none;
+  }
+
+  #marginTopViewAll{
+    margin-top: 110px;
+  }
+}
+
+.css-notify {
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #EC222A;
+  vertical-align: middle;
+  line-height: 20px;
+  z-index: 100000000;
+  font-size: x-small;
+  margin-top: -30px;
+  margin-right: -10px;
+}
+
+/* Trang thanh toan giao dien Dieb Thoai */
+
+@media screen and (max-width: 480px) {
+
+  .inPutCheckOut {
+    margin-left: 70px;
+  }
+  #chiTietThanhToan{
+    margin-left: -30px;
+  }
+  .showOrderWeb{
+    display: none;
+  }
+
+  .fontsizeMobile{
+    font-size: 12px;
+  }
+  #trangthanhtoanMobile{
+    margin-bottom: -315px;
+  }
+}
+
+/* Trang thanh toan giao dien web*/
+@media screen and (min-width: 820.2px) { 
+  .showOrderMobile{
+    display: none;
+    
+  }
+  #alertEmptyCart{
+    margin-top: -1600px;
+    margin-left: 1450px;
+  }
+
+  /* #trangthanhtoanMobile{
+    margin-bottom: 600px,
+  } */
+  
+}
+
+.gd-carousel-wrapper {
+    position:relative;
+
+}
+
+.gd-carousel {
+    position:unset;
+
+    .react-multiple-carousel__arrow {
+        position:absolute;
+    }
+
+    .react-multiple-carousel__arrow--left {
+        left: calc(-3% + 1px)
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: calc(-3% + 1px)
+    }
+}
