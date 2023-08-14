@@ -54,13 +54,13 @@ export const clickSearchValue = (searchValue) => {
                 method: "GET",
                 redirect: "follow",
             };
-            const responseOne = await fetch("http://localhost:8080/productFull", requestOptions)
+            const responseOne = await fetch("https://tame-blue-trench-coat.cyclic.app/productFull", requestOptions)
 
             const params = new URLSearchParams({
                 search: searchValue
             })
 
-            const responseTwo = await fetch("http://localhost:8080/productFullB?" + params.toString(), requestOptions)
+            const responseTwo = await fetch("https://tame-blue-trench-coat.cyclic.app/productFullB?" + params.toString(), requestOptions)
             const responseSearch = await responseTwo.json()
             //console.log(params.toString());
             //console.log("responseSearch", responseSearch.allProducts)
@@ -85,7 +85,7 @@ export const clickFilterProduct = (brand, loaisp, maxCost, minCost) => {
                 method: "GET",
                 redirect: "follow",
             };
-            const responseOne = await fetch("http://localhost:8080/productFull", requestOptions)
+            const responseOne = await fetch("https://tame-blue-trench-coat.cyclic.app/productFull", requestOptions)
 
             const params = new URLSearchParams({
                 brand: brand,
@@ -94,7 +94,7 @@ export const clickFilterProduct = (brand, loaisp, maxCost, minCost) => {
                 maxCost: maxCost
             })
 
-            const responseTwo = await fetch("http://localhost:8080/productFullA?" + params.toString(), requestOptions)
+            const responseTwo = await fetch("https://tame-blue-trench-coat.cyclic.app/productFullA?" + params.toString(), requestOptions)
             const response3 = await responseTwo.json()
             // console.log(params.toString());
             // console.log("res3", response3);
@@ -135,7 +135,7 @@ export const sendInformation = (data1, data2, data3) => {
             }
 
 
-            const responseProducts = await fetch("http://localhost:8080/order", requestOptions)
+            const responseProducts = await fetch("https://tame-blue-trench-coat.cyclic.app/order", requestOptions)
             const productOrder = await responseProducts.json()
             console.log("GGG", productOrder);
 
@@ -197,7 +197,7 @@ export const getApiVoucher = (voucherCode) => {
                 type: PENDING_VOUCHER
             })
 
-            const responseVoucher = await fetch("http://localhost:8080/voucher/" + voucherCode, requestOptions)
+            const responseVoucher = await fetch("https://tame-blue-trench-coat.cyclic.app/voucher/" + voucherCode, requestOptions)
             const gotVoucher = await responseVoucher.json()
             //console.log("gotVoucher", gotVoucher);
 
@@ -245,7 +245,7 @@ export const getApiProducts = () => {
                 method: "GET",
                 redirect: "follow",
             };
-            const responseAllProduct = await fetch("http://localhost:8080/productFull", requestOptions)
+            const responseAllProduct = await fetch("https://tame-blue-trench-coat.cyclic.app/productFull", requestOptions)
             const AllProductsFirst = await responseAllProduct.json()
             return dispatch({
                 type: PRODUCT_RECEIVED,
