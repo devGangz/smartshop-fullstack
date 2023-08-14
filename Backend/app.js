@@ -33,16 +33,6 @@ app.use(function (req, res, next) {
 });
 
 
-// module.exports = function (app) {
-//     app.use(
-//         '/api',
-//         createProxyMiddleware({
-//             target: 'http://localhost:8000',
-//             changeOrigin: true,
-//         })
-//     );
-// };
-
 // Mapping Router
 app.use('/', productRouter)
 app.use('/', productTypeRouter)
