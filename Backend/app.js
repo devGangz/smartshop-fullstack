@@ -16,7 +16,7 @@ app.use(express.json());
 const port = 8080;
 
 // Kết nối đến MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/CRUD_Shop24H')
+mongoose.connect('mongodb+srv://namphongnguyen129:cVgVFNHMu3Ysbh5i@cluster0.wpwulqb.mongodb.net/')
     .then(() => console.log('MongDB was Connected!'));
 
 
